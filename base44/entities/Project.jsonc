@@ -1,0 +1,54 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Project Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Project Description"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "target_beneficiaries": {
+      "type": "string",
+      "title": "Target Beneficiaries"
+    },
+    "programme_area": {
+      "type": "string",
+      "title": "Programme Area"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Start Date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "End Date"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Project Image URL"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ongoing",
+        "completed",
+        "upcoming"
+      ],
+      "default": "upcoming",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "title",
+    "status"
+  ]
+}

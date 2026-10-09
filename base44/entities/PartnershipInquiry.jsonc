@@ -1,0 +1,43 @@
+{
+  "name": "PartnershipInquiry",
+  "type": "object",
+  "properties": {
+    "organization_name": {
+      "type": "string",
+      "title": "Organization Name"
+    },
+    "contact_person": {
+      "type": "string",
+      "title": "Contact Person"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "country": {
+      "type": "string",
+      "title": "Country"
+    },
+    "organization_type": {
+      "type": "string",
+      "title": "Organization Type"
+    },
+    "area_of_interest": {
+      "type": "string",
+      "title": "Area of Interest"
+    },
+    "proposal": {
+      "type": "string",
+      "title": "Partnership Proposal"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    }
+  },
+  "required": [
+    "organization_name",
+    "contact_person",
+    "email"
+  ]
+}

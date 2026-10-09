@@ -1,0 +1,48 @@
+{
+  "name": "VolunteerApplication",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "country": {
+      "type": "string",
+      "title": "Country"
+    },
+    "area_of_interest": {
+      "type": "string",
+      "title": "Area of Interest"
+    },
+    "skills": {
+      "type": "string",
+      "title": "Skills"
+    },
+    "motivation": {
+      "type": "string",
+      "title": "Motivation"
+    },
+    "availability": {
+      "type": "string",
+      "title": "Availability"
+    },
+    "consent": {
+      "type": "boolean",
+      "title": "Consent",
+      "default": false
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "consent"
+  ]
+}

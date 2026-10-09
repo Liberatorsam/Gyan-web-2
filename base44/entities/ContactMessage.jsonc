@@ -1,0 +1,38 @@
+{
+  "name": "ContactMessage",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "subject": {
+      "type": "string",
+      "title": "Subject"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "consent": {
+      "type": "boolean",
+      "title": "Consent",
+      "default": false
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "subject",
+    "message",
+    "consent"
+  ]
+}

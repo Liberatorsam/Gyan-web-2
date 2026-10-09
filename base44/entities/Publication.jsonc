@@ -1,0 +1,50 @@
+{
+  "name": "Publication",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Annual Report",
+        "Policy Brief",
+        "Research Report",
+        "Publication",
+        "Study",
+        "Guide",
+        "Newsletter",
+        "Strategic Plan",
+        "Programme Document"
+      ],
+      "default": "Research Report",
+      "title": "Publication Type"
+    },
+    "topic": {
+      "type": "string",
+      "title": "Topic"
+    },
+    "programme_area": {
+      "type": "string",
+      "title": "Programme Area"
+    },
+    "year": {
+      "type": "number",
+      "title": "Year"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "file_url": {
+      "type": "string",
+      "title": "File URL"
+    }
+  },
+  "required": [
+    "title",
+    "type"
+  ]
+}

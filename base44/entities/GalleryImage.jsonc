@@ -1,0 +1,36 @@
+{
+  "name": "GalleryImage",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Image URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Community Activities",
+        "Youth Activities",
+        "Training",
+        "Events",
+        "Programmes",
+        "Campaigns",
+        "Environmental Activities"
+      ],
+      "default": "Community Activities",
+      "title": "Category"
+    },
+    "caption": {
+      "type": "string",
+      "title": "Caption"
+    }
+  },
+  "required": [
+    "image_url",
+    "category"
+  ]
+}

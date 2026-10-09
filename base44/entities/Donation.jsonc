@@ -1,0 +1,68 @@
+{
+  "name": "Donation",
+  "type": "object",
+  "properties": {
+    "stripe_session_id": {
+      "type": "string",
+      "title": "Stripe Session ID"
+    },
+    "stripe_payment_intent_id": {
+      "type": "string",
+      "title": "Stripe Payment Intent ID"
+    },
+    "stripe_subscription_id": {
+      "type": "string",
+      "title": "Stripe Subscription ID"
+    },
+    "stripe_invoice_id": {
+      "type": "string",
+      "title": "Stripe Invoice ID"
+    },
+    "amount_cents": {
+      "type": "number",
+      "title": "Amount (cents)"
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "default": "usd"
+    },
+    "frequency": {
+      "type": "string",
+      "enum": [
+        "one_time",
+        "monthly"
+      ],
+      "title": "Frequency",
+      "default": "one_time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "refunded",
+        "failed"
+      ],
+      "title": "Status",
+      "default": "pending"
+    },
+    "donor_name": {
+      "type": "string",
+      "title": "Donor Name"
+    },
+    "donor_email": {
+      "type": "string",
+      "title": "Donor Email"
+    },
+    "paid_at": {
+      "type": "string",
+      "format": "datetime",
+      "title": "Paid At"
+    }
+  },
+  "required": [
+    "amount_cents",
+    "currency"
+  ]
+}

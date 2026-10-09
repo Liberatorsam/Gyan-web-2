@@ -1,0 +1,55 @@
+{
+  "name": "NewsArticle",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "slug": {
+      "type": "string",
+      "title": "Slug"
+    },
+    "summary": {
+      "type": "string",
+      "title": "Summary"
+    },
+    "content": {
+      "type": "string",
+      "title": "Full Article"
+    },
+    "featured_image": {
+      "type": "string",
+      "title": "Featured Image URL"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "News",
+        "Events",
+        "Programmes",
+        "Youth Voices",
+        "Research",
+        "Advocacy",
+        "Community Stories",
+        "Announcements"
+      ],
+      "default": "News",
+      "title": "Category"
+    },
+    "author": {
+      "type": "string",
+      "title": "Author"
+    }
+  },
+  "required": [
+    "title",
+    "date",
+    "category"
+  ]
+}

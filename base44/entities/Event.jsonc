@@ -1,0 +1,39 @@
+{
+  "name": "Event",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Event Title"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "time": {
+      "type": "string",
+      "title": "Time"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "registration_link": {
+      "type": "string",
+      "title": "Registration Link"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Event Image URL"
+    }
+  },
+  "required": [
+    "title",
+    "date"
+  ]
+}
